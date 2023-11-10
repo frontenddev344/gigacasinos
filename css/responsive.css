@@ -89,6 +89,18 @@ span {
 }
 @media screen and (max-width: 991px) {
   /*header start*/
+  button.dropbtn.menu.active {
+    color: #f2efe8;
+  }
+  .dropdown-content {
+    min-width: 100%;
+  }
+  .dropbtn {
+    padding: 16px 0;
+  }
+  .site-header .site-nav ul li a.active {
+    color: #f2efe8;
+  }
   .site-nav {
     position: fixed;
     top: 0;
@@ -161,7 +173,7 @@ span {
     color: #ffffff;
     position: relative;
     white-space: nowrap;
-    font-family: "Poppins";
+    font-family: "Forum";
   }
   .site-nav li a:hover::after {
     width: 100%;
@@ -214,11 +226,18 @@ span {
   }
   .bd-header-top__meta a {
     display: block;
-    color: #ffffff;
+    color: #fff;
     font-size: 16px;
     line-height: 32px;
     font-weight: 600;
     opacity: 0.7;
+  }
+  .dropdown-content {
+    background-color: #f2efe8;
+    min-width: 220px;
+  }
+  .dropdown-content a {
+    color: #2a4d4c;
   }
 }
 @media screen and (max-width: 768px) {

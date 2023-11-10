@@ -142,6 +142,7 @@ header.site-header.sticky {
   display: inline-block;
   font-size: 17px;
   font-weight: 400;
+  color: #2a4d4c;
 }
 .site-nav a:hover {
   color: #ea713c;
@@ -904,6 +905,45 @@ button.submit-btn:hover {
   background-color: #2a4d4c !important;
   border-color: #2a4d4c !important;
   color: #f2efe8 !important;
+}
+
+.dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2a4d4c;
+  min-width: 190px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+button.dropbtn.menu.active {
+  background: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
 }
 
 /*contact-css-end*/
