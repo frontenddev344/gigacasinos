@@ -392,16 +392,6 @@ section.aboutus {
     margin-top: 50px;
     position: relative;
 
-    &::after {
-        position: absolute;
-        content: '';
-        background-color: rgba(0, 0, 0, 0.70);
-        height: 100%;
-        width: 100%;
-        inset: 0;
-        z-index: 0;
-    }
-
 }
 
 section.starttext.space.about p {
@@ -421,8 +411,6 @@ section.starttext.space.about p {
 }
 
 /*choose-css-start*/
-
-
 .choose {
     &-head {
         padding: 50px 0;
@@ -504,6 +492,29 @@ section.starttext.space.about p {
 
 /*choose-css-end*/
 /*aboutusbanner-css-end*/
+
+/*reviewsbanner-css-start*/
+section.reviews-section {
+    position: relative;
+    height: 450px;
+    background-image: url(../images/reviewsbanner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    object-fit: cover;
+    margin-top: 50px;
+    position: relative;
+    &::after {
+        position: absolute;
+        content: '';
+        background-color: rgba(0, 0, 0, 0.50);
+        height: 100%;
+        width: 100%;
+        inset: 0;
+        z-index: 0;
+    }
+}
+/*reviewsbanner-css-end*/
 
 /*footer-css-start*/
 .footer {
@@ -631,7 +642,6 @@ section.privacy-policy {
 }
 
 /*privacy-css-end*/
-
 
 /*terms-css-start*/
 .terms-section {

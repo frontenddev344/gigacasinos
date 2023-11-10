@@ -419,15 +419,6 @@ section.aboutus {
   margin-top: 50px;
   position: relative;
 }
-section.aboutus::after {
-  position: absolute;
-  content: "";
-  background-color: rgba(0, 0, 0, 0.7);
-  height: 100%;
-  width: 100%;
-  inset: 0;
-  z-index: 0;
-}
 
 section.starttext.space.about p {
   text-align: justify;
@@ -517,6 +508,29 @@ section.starttext.space.about p {
 
 /*choose-css-end*/
 /*aboutusbanner-css-end*/
+/*reviewsbanner-css-start*/
+section.reviews-section {
+  position: relative;
+  height: 450px;
+  background-image: url(../images/reviewsbanner.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  object-fit: cover;
+  margin-top: 50px;
+  position: relative;
+}
+section.reviews-section::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  z-index: 0;
+}
+
+/*reviewsbanner-css-end*/
 /*footer-css-start*/
 .footer {
   background: #2a4d4c;
