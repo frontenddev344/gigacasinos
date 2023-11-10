@@ -36,7 +36,7 @@ h1 {
   font-size: 65px;
   color: #f2efe8;
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 768px) {
   h1 {
     font-size: 50px;
   }
@@ -684,6 +684,10 @@ section.riverrockbanner::after {
 
 .casinodetail {
   padding: 50px 0;
+  background-image: url(../images/bodybg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .casinodetail-text h3 {
   font-size: 28px;

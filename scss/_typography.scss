@@ -36,7 +36,7 @@ h1 {
     font-size: 65px;
     color: $clr-creme;
 
-    @include mq(sm) {
+    @include mq(md) {
         font-size: 50px;
     }
 }

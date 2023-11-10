@@ -33,7 +33,7 @@ h1 {
   font-size: 65px;
   color: #f2efe8;
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 768px) {
   h1 {
     font-size: 50px;
   }
@@ -276,6 +276,9 @@ span {
     width: 100%;
   }
   .content-wrap p {
+    text-align: justify;
+  }
+  .casinodetail-text p {
     text-align: justify;
   }
 }
