@@ -508,19 +508,19 @@ section.starttext.space.about p {
 
 /*choose-css-end*/
 /*aboutusbanner-css-end*/
-/*reviewsbanner-css-start*/
-section.reviews-section {
+/*reviewsdetail-css-start*/
+section.windsor-banner {
   position: relative;
   height: 450px;
-  background-image: url(../images/reviewsbanner.jpeg);
+  background-image: url(../images/windsorbanner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   object-fit: cover;
   margin-top: 50px;
   position: relative;
 }
-section.reviews-section::after {
+section.windsor-banner::after {
   position: absolute;
   content: "";
   background-color: rgba(0, 0, 0, 0.5);
@@ -530,7 +530,154 @@ section.reviews-section::after {
   z-index: 0;
 }
 
-/*reviewsbanner-css-end*/
+section.casinolacleamy-banner {
+  position: relative;
+  height: 450px;
+  background-image: url(../images/casinodulacbanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  margin-top: 50px;
+  position: relative;
+}
+section.casinolacleamy-banner::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  z-index: 0;
+}
+
+section.niagara-banner {
+  position: relative;
+  height: 450px;
+  background-image: url(../images/niagarabanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  margin-top: 50px;
+  position: relative;
+}
+section.niagara-banner::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  z-index: 0;
+}
+
+section.casinoramabanner {
+  position: relative;
+  height: 450px;
+  background-image: url(../images/casinoramabanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  margin-top: 50px;
+  position: relative;
+}
+section.casinoramabanner::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  z-index: 0;
+}
+
+section.Monttremblantbanner {
+  position: relative;
+  height: 450px;
+  background-image: url(../images/monttremblantbanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  margin-top: 50px;
+  position: relative;
+}
+section.Monttremblantbanner::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  z-index: 0;
+}
+
+section.fallsview-banner {
+  position: relative;
+  height: 450px;
+  background-image: url(../images/fallsviewbanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  margin-top: 50px;
+  position: relative;
+}
+section.fallsview-banner::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  z-index: 0;
+}
+
+section.hardrock-banner {
+  position: relative;
+  height: 450px;
+  background-image: url(../images/hardrockbanner.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  margin-top: 50px;
+  position: relative;
+}
+section.hardrock-banner::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  z-index: 0;
+}
+
+section.riverrockbanner {
+  position: relative;
+  height: 450px;
+  background-image: url(../images/riverrockbanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  margin-top: 50px;
+  position: relative;
+}
+section.riverrockbanner::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  z-index: 0;
+}
+
+/*reviewsdetail-css-start*/
 /*footer-css-start*/
 .footer {
   background: #2a4d4c;
