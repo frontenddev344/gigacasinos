@@ -84,7 +84,7 @@ span {
     max-width: none;
   }
   .item {
-    aspect-ratio: 1/0.7;
+    aspect-ratio: 1/1;
   }
 }
 @media screen and (max-width: 991px) {

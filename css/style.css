@@ -639,7 +639,7 @@ section.fallsview-banner::after {
 section.hardrock-banner {
   position: relative;
   height: 450px;
-  background-image: url(../images/hardrockbanner.jpeg);
+  background-image: url(../images/hardrockbanner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
