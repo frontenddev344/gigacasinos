@@ -1,0 +1,761 @@
+/*global start*/
+@import 'mixins';
+@import 'variables';
+@import 'typography';
+
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 1.6rem;
+    background: $clr-creme;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Sarabun', sans-serif;
+}
+
+a:focus {
+    color: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*global end*/
+
+/*header start*/
+header.site-header {
+    background: $clr-creme;
+    font-size: 18px;
+    padding: 14px 0;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+    transition: .3s;
+}
+
+header.site-header.sticky {
+    background: $clr-creme;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    padding: 14px 0;
+    position: fixed;
+}
+
+.site-header .site-nav ul li a.active {
+    color: $clr-green;
+    border-bottom: 2px solid $clr-orange;
+}
+
+.site-logo img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.site-nav a {
+    padding: 8px 12px !important;
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 400;
+
+    &:hover {
+        color: $clr-orange;
+    }
+}
+
+
+.site-header {
+    padding: 10px 0;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.closed-menu {
+    display: none;
+}
+
+.menu-toggle {
+    display: none !important;
+}
+
+/*header end*/
+
+/*banner-css-start*/
+section.banner-section {
+    position: relative;
+    height: 450px;
+    background-image: url(../images/homebanner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    margin-top: 50px;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        background-color: rgba(0, 0, 0, 0.70);
+        height: 100%;
+        width: 100%;
+        inset: 0;
+        z-index: 0;
+    }
+
+}
+
+.banner__text {
+    color: $clr-creme;
+    font-size: 55px;
+    line-height: normal;
+    z-index: 2;
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+/*banner-css-end*/
+
+/*homepage-css-start*/
+.starttext.space {
+    padding: 50px 0;
+
+    p {
+        text-align: left;
+
+        @include mq(sm) {
+            text-align: justify;
+        }
+    }
+}
+
+/*Faq css start*/
+.faq-page {
+    width: 100%;
+    background-color: $clr-creme;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.casino-text.hoteli {
+    padding: 0 0 50px 0 !important;
+}
+
+.faq-item {
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-question {
+    font-size: 18px;
+    line-height: 25px;
+    color: $clr-green;
+    font-family: 'Forum';
+    font-weight: 700;
+
+    @include mq(sm) {
+        font-size: 15px;
+    }
+}
+
+.faq-section {
+    padding: 50px 0 0 0;
+}
+
+.faq-answer {
+    font-size: 16px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    p {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+.faq-answer.active {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.icon-container i {
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon-container i.active {
+    transform: rotate(90deg);
+}
+
+/*Faq css end*/
+
+/*threetiles css start*/
+.threetiles {
+    &-title {
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+
+            @include mq(sm) {
+                font-size: 35px;
+            }
+        }
+    }
+
+    &-card {
+        margin: 0 10px;
+    }
+
+    &-img img {
+        max-height: 350px;
+        object-fit: cover;
+    }
+}
+
+.threetilescard-inner {
+    margin: 20px 0;
+
+    p {
+        text-align: justify;
+    }
+}
+
+
+/*threetiles css end*/
+
+/*homepage-css-end*/
+
+/*topcasinos-start*/
+section.topcasinos {
+    position: relative;
+    height: 450px;
+    background-image: url(../images/topcasinosbanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    margin-top: 50px;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        background-color: rgba(0, 0, 0, 0.50);
+        height: 100%;
+        width: 100%;
+        inset: 0;
+        z-index: 0;
+    }
+
+}
+
+/*betting-section-start*/
+.main-img-text-content {
+    display: flex;
+    align-items: center;
+    background: $clr-creme;
+    justify-content: space-between;
+    border: 2px solid $clr-green;
+    padding: 23px;
+    border-radius: 4px;
+}
+
+.restaurant-img {
+    width: 100%;
+    max-width: 30%;
+
+    img {
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+.restaurent-text {
+    max-width: 100%;
+    margin-left: 0;
+    padding: 0 40px;
+    width: 100%;
+
+    h4 {
+        color: $clr-orange;
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 17px;
+        color: $clr-green;
+    }
+}
+
+
+.resturent-button {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.resturent-button a {
+    display: block;
+    width: 126px;
+    background: $clr-green;
+    text-align: center;
+    color: #fff;
+    height: 53px;
+    line-height: 53px;
+    font-size: 19px;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: transparent;
+        border: 1px solid $clr-green;
+        color: $clr-green;
+    }
+}
+
+.row.restaurant {
+    padding-top: 15px;
+}
+
+.reviewflex {
+    display: flex;
+    gap: 25px;
+}
+
+/*betting-section-end*/
+
+/*topcasinos-css-end*/
+
+/*aboutusbanner-css-start*/
+section.aboutus {
+    position: relative;
+    height: 450px;
+    background-image: url(../images/aboutusbanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    object-fit: cover;
+    margin-top: 50px;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        background-color: rgba(0, 0, 0, 0.70);
+        height: 100%;
+        width: 100%;
+        inset: 0;
+        z-index: 0;
+    }
+
+}
+
+section.starttext.space.about p {
+    text-align: justify;
+    color: $clr-green;
+}
+
+.starttext__content.aboutus {
+    h4 {
+        color: $clr-green;
+        font-size: 48px;
+    }
+
+    p {
+        text-align: left;
+    }
+}
+
+/*choose-css-start*/
+
+
+.choose {
+    &-head {
+        padding: 50px 0;
+
+        h3 {
+            font-size: 28px;
+            color: $clr-orange;
+        }
+    }
+}
+
+.item {
+    background: $clr-green;
+    padding: 40px 20px;
+    transition: 0.5s;
+    position: relative;
+    aspect-ratio: 1/0.5;
+    z-index: 1;
+    margin-bottom: 30px;
+    line-height: 1;
+    text-align: center;
+    height: auto;
+    width: 100%;
+
+    img {
+        max-width: 64px;
+        transition: .3s;
+    }
+
+    h5 {
+        font-size: 24px;
+        color: $clr-creme;
+        margin: 10px 0;
+
+        &:hover {
+            color: $clr-orange;
+            -webkit-transition: .5s;
+            transition: .5s;
+        }
+    }
+
+    p {
+        margin: 0 auto;
+        color: $clr-creme;
+        max-width: 65%;
+    }
+}
+
+.item span {
+    font-size: 45px;
+    color: $clr-green;
+    line-height: 1;
+    margin-bottom: 10px;
+    display: inline-block;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.item:hover span {
+    color: $clr-black;
+}
+
+.item .shape {
+    position: absolute;
+    opacity: 0.03;
+    z-index: -1;
+    bottom: 15px;
+    left: 120px;
+}
+
+.item .shape span {
+    font-size: 140px;
+    color: $clr-black;
+}
+
+.item:hover img {
+    transform: rotateY(180deg);
+}
+
+/*choose-css-end*/
+/*aboutusbanner-css-end*/
+
+/*footer-css-start*/
+.footer {
+    background: $clr-green;
+    padding: 50px 0;
+
+    &-logo {
+        img {
+            max-width: 250px;
+        }
+    }
+
+    &-links {
+        h2 {
+            color: $clr-orange;
+        }
+
+        h3 {
+            color: $clr-orange;
+            font-size: 25px;
+        }
+
+        li a {
+            color: $clr-creme;
+
+            &:hover {
+                color: $clr-orange;
+            }
+        }
+    }
+
+    &-adresse {
+        h2 {
+            color: $clr-orange;
+        }
+
+        h3 {
+            color: $clr-orange;
+            font-size: 25px;
+        }
+
+        p {
+            color: $clr-creme;
+        }
+    }
+
+    &-mails {
+
+        a,
+        i {
+            color: $clr-creme;
+        }
+
+    }
+}
+
+.social-signals {
+    padding: 25px 0;
+
+    i {
+        color: $clr-creme;
+        font-size: 24px;
+        text-align: center;
+        line-height: 40px;
+        margin: 0 10px;
+        border: 1px solid $clr-creme;
+        border-radius: 30px;
+        height: 40px;
+        width: 40px;
+        transition: .3s linear;
+
+        &:hover {
+            transform: translateY(-10px);
+            color: $clr-orange;
+        }
+    }
+}
+
+/*footer-css-end*/
+
+
+/*privacy-css-start*/
+.privacy-section {
+    position: relative;
+    height: 350px;
+    background-image: url(../images/privacybanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    margin-top: 50px;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        background-color: rgba(0, 0, 0, 0.50);
+        height: 100%;
+        width: 100%;
+        inset: 0;
+        z-index: 0;
+    }
+
+}
+
+section.privacy-policy {
+    padding: 50px 0;
+}
+
+.content-wrap {
+    h4 {
+        font-size: 28px;
+        color: $clr-orange;
+    }
+
+    li {
+        color: $clr-green;
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+/*privacy-css-end*/
+
+
+/*terms-css-start*/
+.terms-section {
+    position: relative;
+    height: 350px;
+    background-image: url(../images/termsbanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    margin-top: 50px;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        background-color: rgba(0, 0, 0, 0.50);
+        height: 100%;
+        width: 100%;
+        inset: 0;
+        z-index: 0;
+    }
+
+}
+
+section.terms {
+    padding: 50px 0;
+}
+
+/*terms-css-end*/
+
+/*contact-css-start*/
+.contact-section {
+    position: relative;
+    height: 350px;
+    background-image: url(../images/contactbanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    margin-top: 50px;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        background-color: rgba(0, 0, 0, 0.50);
+        height: 100%;
+        width: 100%;
+        inset: 0;
+        z-index: 0;
+    }
+
+}
+
+section.contact {
+    padding: 50px 0;
+}
+
+.about_us_content {
+    padding: 2rem;
+    margin: 30px 0;
+    width: 50%;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.input-control {
+    display: block;
+    width: 100%;
+    height: 4rem;
+    border: 1px solid $clr-green;
+    padding: 2rem 2rem;
+    background: transparent;
+    color: $clr-black;
+}
+
+textarea.input-control {
+    resize: none;
+    height: auto;
+}
+
+.form-group .submit-btn {
+    background: transparent;
+    border: 1px solid $clr-black;
+    transition: all 0.2s linear;
+    display: inline-block;
+    padding: 0.8rem 4rem;
+    color: $clr-white;
+    text-transform: capitalize;
+
+    &:hover {
+        background-color: $clr-black;
+    }
+}
+
+.input-control:focus-visible {
+    outline: none;
+}
+
+.form-group label {
+    display: inline-block;
+    padding-bottom: 5px;
+    color: $clr-green;
+    font-family: 'Forum';
+    transition: all 0.2s linear;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+button.submit-btn {
+    color: $clr-black !important;
+
+    &:hover {
+        background-color: $clr-green !important;
+        border-color: $clr-green !important;
+        color: $clr-creme !important;
+    }
+
+}
+
+/*contact-css-end*/
+
+
+/*# sourceMappingURL=style.css.map */
