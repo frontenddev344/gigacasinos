@@ -695,6 +695,11 @@ section.riverrockbanner::after {
   color: #ea713c;
 }
 
+.main-rate-star {
+  display: flex;
+  gap: 5px;
+}
+
 /*reviewsdetail-css-start*/
 /*footer-css-start*/
 .footer {
