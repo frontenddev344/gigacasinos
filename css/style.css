@@ -677,6 +677,19 @@ section.riverrockbanner::after {
   z-index: 0;
 }
 
+.resturent-button.new {
+  margin: 0;
+  padding: 25px 0;
+}
+
+.casinodetail {
+  padding: 50px 0;
+}
+.casinodetail-text h3 {
+  font-size: 28px;
+  color: #ea713c;
+}
+
 /*reviewsdetail-css-start*/
 /*footer-css-start*/
 .footer {
