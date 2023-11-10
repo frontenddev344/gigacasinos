@@ -176,7 +176,7 @@ header.site-header.sticky {
 section.banner-section {
   position: relative;
   height: 450px;
-  background-image: url(../images/homebanner.jpeg);
+  background-image: url(../images/homebanner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
