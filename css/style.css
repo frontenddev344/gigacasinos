@@ -412,7 +412,7 @@ section.topcasinos::after {
 section.aboutus {
   position: relative;
   height: 450px;
-  background-image: url(../images/aboutusbanner.jpg);
+  background-image: url(../images/aboutusbanner.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -534,7 +534,7 @@ section.windsor-banner::after {
 section.casinolacleamy-banner {
   position: relative;
   height: 450px;
-  background-image: url(../images/casinodulacbanner.jpg);
+  background-image: url(../images/casinodulacbanner.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -555,7 +555,7 @@ section.casinolacleamy-banner::after {
 section.niagara-banner {
   position: relative;
   height: 450px;
-  background-image: url(../images/niagarabanner.jpg);
+  background-image: url(../images/niagarabanner.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

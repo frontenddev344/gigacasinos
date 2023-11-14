@@ -385,7 +385,7 @@ section.topcasinos {
 section.aboutus {
     position: relative;
     height: 450px;
-    background-image: url(../images/aboutusbanner.jpg);
+    background-image: url(../images/aboutusbanner.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -520,7 +520,7 @@ section.windsor-banner {
 section.casinolacleamy-banner {
     position: relative;
     height: 450px;
-    background-image: url(../images/casinodulacbanner.jpg);
+    background-image: url(../images/casinodulacbanner.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -542,7 +542,7 @@ section.casinolacleamy-banner {
 section.niagara-banner {
     position: relative;
     height: 450px;
-    background-image: url(../images/niagarabanner.jpg);
+    background-image: url(../images/niagarabanner.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -690,10 +690,12 @@ section.riverrockbanner {
         }
     }
 }
+
 .main-rate-star {
     display: flex;
     gap: 5px;
 }
+
 /*reviewsdetail-css-start*/
 
 /*footer-css-start*/
@@ -974,7 +976,7 @@ button.submit-btn {
 
 button.dropbtn.menu.active {
     background: none;
-   
+
 }
 
 .dropdown:hover .dropdown-content {
@@ -984,11 +986,13 @@ button.dropbtn.menu.active {
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
+
 section.contact__main h2 {
     text-align: center;
     margin: 30px 0;
     font-size: 35px;
 }
+
 /*contact-css-end*/
 
 
