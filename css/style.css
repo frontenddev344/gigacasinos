@@ -941,6 +941,7 @@ button.submit-btn:hover {
 
 button.dropbtn.menu.active {
   background: none;
+  color: #2a4d4c;
 }
 
 .dropdown:hover .dropdown-content {
