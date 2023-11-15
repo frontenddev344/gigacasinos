@@ -222,11 +222,13 @@
             opacity: 0.7;
         }
     }
+
     .dropdown-content {
 
         background-color: $clr-creme;
-        min-width:220px;
-        a{
+        min-width: 220px;
+
+        a {
             color: $clr-green;
 
         }
@@ -310,6 +312,10 @@
 
     .casinodetail-text p {
         text-align: justify;
+    }
+
+    .footer-adresse {
+        margin-top: 10px;
     }
 }
 
